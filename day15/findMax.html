@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대, 최소값 찾기</title>
+</head>
+<body>
+    <script>
+        //최대값
+        let number = [33, 25, 17, 92, 56, 100, 81];
+        let maxV = number[0];   //17
+        for(i = 1; i < number.length; i++){
+            //값의 비교
+            if(maxV < number[i]){
+                maxV = number[i];
+            }
+        }
+        /*
+            17 < 33 maxV=33
+            33 < 25 maxV=33
+            33 < 92 maxV=92
+            92 < 56 maxV=92
+            92 < 100 maxV=100
+            100 < 81 maxV=100
+        */
+
+        //출력
+        document.write("<br>최대값 : " +maxV);
+
+        //최소값찾기
+        let minV = number[0];
+        for(i = 1; i < number.length; i++){
+            //값의 비교
+            if(minV > number[i]){
+                minV = number[i];
+            }
+        }
+        //출력
+        document.write("<br>최소값 : " + minV);
+
+    </script>
+</body>
+</html>
