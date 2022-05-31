@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener() 함수</title>
+</head>
+<body>
+    <div>
+        <img src="./img/easys-1.jpg" alt="여자 아이" id="pic">
+    </div>
+
+    <script>
+        let img = document.querySelector("#pic");
+        //이벤트 이름 앞에 on을 생략
+        /*img.addEventListener("mouseover", changePic);
+        img.addEventListener("mouseout", originPic);
+
+        function changePic(){
+            img.src = "./img/easys-2.jpg";
+        }
+
+        function originPic(){
+            img.src = "./img/easys-1.jpg";
+        }
+        */
+
+        //실행 함수
+        //마우스를 올려 놓으면 이미지 변경
+        img.addEventListener("mouseover",function(){
+            img.src = "./img/easys-2.jpg";
+        })
+        //마우스가 이미지를 벗어났을때 원래 이미지로 변경
+        img.addEventListener("mouseout",function(){
+            img.src = "./img/easys-1.jpg";
+        })
+    </script>
+</body>
+</html>
