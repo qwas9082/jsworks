@@ -30,7 +30,7 @@
         
         for(let i =0 ; i < lotto.length; i++){
             let num = Math.floor(Math.random()*45)+1;
-            winner[1] = num;
+            lotto[i] = num;
 
 
             for(let j = 0; j < i; j++){
@@ -42,10 +42,10 @@
         }
 
         for(let i = 0; i < lotto.length; i++){
-            if(i ==lotto.length-1){
-                document.write(lotto[i]+"")
+            if(i ==lotto.length -1 ){
+                document.write(lotto[i]+"");
             }else{
-                document.write(lotto[i]+", ")
+                document.write(lotto[i]+", ");
             }
         }
 
