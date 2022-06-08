@@ -10,7 +10,7 @@ $(document).ready(function(){
     $(":root").css("background", "lightgray");
     //실행 함수(매개 변수가 없는 함수)
     (function upDown(){
-        $("h2").slideToggle(2000,upDown);   //콜백함수,
+        $("h2").slideToggle(1000,upDown);   //콜백함수,
     })();
     //움직이는 요소 선택
     $(":animated").css("border","4px solid darkred");
